@@ -23,7 +23,7 @@ var vm = new Vue({
 		queryAddress: function () {
 			var _this = this;
 			let a= 3;
-			this.$http.get("/javascripts/address.json").then(function (response) {
+			this.$http.get("/javascripts/addressData.json").then(function (response) {
 				var res = response.data;
 				if(res.status=="0"){
 					_this.addressList = res.result;
