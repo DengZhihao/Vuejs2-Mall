@@ -1,0 +1,56 @@
+{
+  "status": 2,
+  "result": {
+    "list": [
+      {
+        "advId": "0001",
+        "advName": "笔记本",
+        "advClass": "科技",
+        "advImage": "/images/tech-1.png"
+      },
+      {
+        "advId": "0003",
+        "advName": "移动硬盘",
+        "advClass": "科技",
+        "advImage": "/images/tech-2.png"
+      },
+      {
+        "advId": "0005",
+        "advName": "扫地机器人",
+        "advClass": "科技",
+        "advImage": "/images/tech-3.png"
+      },
+      {
+        "advId": "0007",
+        "advName": "手环",
+        "advClass": "科技",
+        "advImage": "/images/tech-4.png"
+      },
+      {
+        "advId": "0002",
+        "advName": "汽车",
+        "advClass": "户外",
+        "advImage": "/images/outdoor-1.png"
+      },
+      {
+        "advId": "0004",
+        "advName": "户外鞋",
+        "advClass": "户外",
+        "advImage": "/images/outdoor-2.png"
+      },
+      {
+        "advId": "0006",
+        "advName": "防晒服",
+        "advClass": "户外",
+        "advImage": "/images/outdoor-3.png"
+      },
+      {
+        "advId": "0008",
+        "advName": "运动鞋",
+        "advClass": "户外",
+        "advImage": "/images/outdoor-4.png"
+      }
+    ]
+  },
+  "message": ""
+}

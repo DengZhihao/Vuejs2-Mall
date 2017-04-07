@@ -3,6 +3,11 @@ var router = express.Router();
 
 /* GET main page. */
 router.get('/', function (req, res, next) {
+    res.render('home', {title: ''});
+});
+
+/* GET detail page. */
+router.get('/detail', function (req, res, next) {
     res.render('detail', {title: ''});
 });
 
