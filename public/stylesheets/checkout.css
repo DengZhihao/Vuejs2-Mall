@@ -1149,3 +1149,74 @@
 }
 
 /** 订单详情 **/
+
+@media only screen and (min-width: 991px) {
+    .detail-content {
+        width: 990px;
+        height: 500px;
+        margin: 0 auto;
+        border: 3px #ccc solid;
+    }
+
+    .detail-content-left {
+        float: left;
+        width: 400px;
+        height: 400px;
+        margin: 0 auto;
+        border: 2px #ccc solid;
+    }
+
+    .detail-content-right {
+        float: left;
+        width: 580px;
+        height: 490px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+    .detail-content {
+        width: 760px;
+        height: 380px;
+        margin: 0 auto;
+        border: 2px #ccc solid;
+    }
+
+    .detail-content-left {
+        float: left;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        border: 1px #ccc solid;
+    }
+
+    .detail-content-right {
+        float: left;
+        width: 450px;
+        height: 300px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .detail-content {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .detail-content-left {
+        float: left;
+        width: 100%;
+        margin: 0 auto;
+        padding: 8%;
+    }
+
+    .detail-content-right {
+        float: left;
+        width: 100%;
+        height: 50px;
+        margin: 0 auto;
+    }
+}
+
+/** 商品详情 **/
