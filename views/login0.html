@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="stylesheet" href="/stylesheets/login.css">
+</head>
+<body>
+<div class="bg">
+    <img class="img-responsive logo" src="/images/logo.png" alt="">
+    <div class="main">
+        <div class="top">
+            <a href="#phone" class="top-btn" :class="{'active':loginMethod==1}" @click="loginMethod=1">登录</a>
+            <a href="#email" class="top-btn" :class="{'active':loginMethod==0}" @click="loginMethod=0">注册</a>
+        </div>
+        <form id="phone" class="register" v-show="loginMethod">
+            <input id="phone-num" type="text" class="form-input" placeholder="请输入手机号码" maxlength="11" autocomplete="on"
+                   autofocus="autofocus" required="required"
+                   onkeyup="this.value=this.value.replace(/[\u4E00-\u9FA5]/g,'');this.value=this.value.replace(/[^\d]/g,'')"
+                   onkeypress="if (event.keyCode<48 || event.keyCode>57){event.returnValue = false;}">
+            <input type="password" class="form-input" placeholder="请输入密码" required="required">
+            <input type="submit" class="form-btn" value="登&emsp;录">
+        </form>
+        <form id="email" class="register" v-show="!loginMethod">
+            <input type="text" class="form-input" placeholder="请输入手机号码" maxlength="11" autocomplete="on"
+                   autofocus="autofocus" required="required"
+                   onkeyup="this.value=this.value.replace(/[\u4E00-\u9FA5]/g,'');this.value=this.value.replace(/[^\d]/g,'')"
+                   onkeypress="if (event.keyCode<48 || event.keyCode>57){event.returnValue = false;}">
+            <input type="password" class="form-input" placeholder="请输入密码"  maxlength="11" required="required">
+            性别：<input type="radio" name="sex" value="1" required="required" style="margin-left: 10%">男
+            <input type="radio" name="sex" value="2" required="required" style="margin-left: 10%">女<br>
+            <input type="text" class="form-input" placeholder="请输入昵称" maxlength="10" required="required" style="margin-top: 5%">
+            <input type="checkbox" id="eread" required="required" style="margin-top: 5%"><label for="eread">我已阅读并同意<a
+                href="">《用户协议》</a></label>
+            <input type="submit" class="form-btn" value="注&emsp;册" style="margin-top: 5%">
+            <div class="jump">
+                已有账号？<a href="#phone">赶快登陆!</a>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="/javascripts/vue2.js"></script>
+<script src="/javascripts/vue-resource.min.js"></script>
+<script src="/javascripts/login.js"></script>
+</body>
+</html>

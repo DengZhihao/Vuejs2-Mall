@@ -490,3 +490,15 @@ input[type="text"], textarea {
     transform: rotate(40deg);
     transition: all .3s ease-out;
 }
+
+/** 我的信息 **/
+.mine{
+    position: fixed;
+    top: 60%;
+    right:2%;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background:white url(/images/mine.png)  no-repeat center;
+    border: solid #d1434a 3px;
+}

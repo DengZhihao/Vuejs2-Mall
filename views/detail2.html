@@ -5,31 +5,28 @@
     <!-- Always force latest IE rendering engine or request Chrome Frame -->
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>首页</title>
+    <title>商品详情</title>
     <link href="/stylesheets/base2.css" rel="stylesheet">
     <link href="/stylesheets/checkout.css" rel="stylesheet">
-    <link href="/stylesheets/vue-swipe.css" rel="stylesheet" charset="utf-8">
     <style>
-        .my-swipe {
-            height: 200px;
-            color: #fff;
-            font-size: 30px;
-            text-align: center;
+        .content-name {
+            font-family: Moderat;
+            font-size: 20px;
+            height: 15%;
+            padding: 2%;
         }
 
-        .slide1 {
-            background-color: #0089dc;
-            color: #fff;
+        .content-price {
+            width: 100%;
+            height: 25%;
+            background: #E4E4E4;
+            font-size: 24px;
+            padding: 9%;
         }
 
-        .slide2 {
-            background-color: #ffd705;
-            color: #000;
-        }
-
-        .slide3 {
-            background-color: #ff2d4b;
-            color: #fff;
+        .content-message {
+            font-size: 14px;
+            padding: 5%;
         }
     </style>
 </head>
@@ -67,32 +64,28 @@
 <div class="container">
     <div class="cart">
         <div class="checkout-title">
-            <span>首页</span>
+            <span>商品详情</span>
         </div>
-        <div class="item-list-wrap">
-            <div class="cart-item">
-                <swipe class="my-swipe">
-                    <swipe-item class="slide1"></swipe-item>
-                    <swipe-item class="slide2"></swipe-item>
-                    <swipe-item class="slide3"></swipe-item>
-                </swipe>
+        <div class="detail-content">
+            <div class="detail-content-left">
+                <img src="/images/goods-1.png" style="width: 100%;height: 100%;">
+            </div>
+            <div class="detail-content-right">
+                <div class="content-name">商品名称</div>
+                <div class="content-price">商品价格：<span style="color:#C40000;margin-left: 3%">￥399.00</span></div>
+                <div class="content-message"><span style="margin-left: 20%">月销量： </span><span style="margin-left: 20%">好评率：</span></div>
             </div>
         </div>
-        <div class="addr-list-wrap">
-            <div class="addr-list">
-                <ul>
-                    <li v-for="adv in advList" style="padding: 0;" href="/detail">
-                        <a href="/detail"> <img :src="adv.advImage" :alt="adv.advName"
-                                 style="height: 100%;margin-left:calc(50% - 120px);"></a>
-                    </li>
-                </ul>
+        <div class="cart-foot-wrap">
+            <div class="next-btn-wrap">
+                <a href="/cart" class="btn btn--red">加入购物车</a>
             </div>
         </div>
     </div>
 </div>
+<a class="mine" href="/mine"></a>
 <script src="/javascripts/vue2.js"></script>
 <script src="/javascripts/vue-resource.min.js"></script>
-<script src="/javascripts/vue-swipe.js"></script>
-<script src="/javascripts/home.js"></script>
+<script src="/javascripts/detail.js"></script>
 </body>
 </html>

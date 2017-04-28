@@ -1,0 +1,142 @@
+html, body {
+    height: 100%;
+    min-height: 500px;
+    font-family: "moderat", sans-serif;
+    font-size: 12px;
+}
+
+.bg {
+    padding: 1px 15px;
+    background-color: #d1434a;
+    height: 50%;
+}
+
+.logo {
+    display: block;
+    margin: 8px auto;
+}
+
+.main {
+    width: 40%;
+    margin: 0 auto;
+    padding: 3% 10%;
+    border-radius: 3px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.main .top {
+    margin-bottom: 8%;
+}
+
+.main .top .top-btn {
+    display: inline-block;
+    width: 48%;
+    color: #999;
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
+    line-height: 400%;
+    vertical-align: middle;
+    border-bottom: 2px solid #eee;
+    cursor: pointer;
+}
+
+.main .top .active {
+    color: #d1434a;
+    border-bottom: 2px solid #d1434a;
+}
+
+.register input {
+    ime-mode: disabled !important;
+}
+
+.register .form-input {
+    display: block;
+    width: 90%;
+    height: 46px;
+    margin: 0 0 20px 0;
+    padding: 0 13px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    background-color: #f8f8f8;
+}
+
+.register .form-input:focus {
+    border: 1px solid #d1434a;
+    background-color: #f3f3f3;
+    outline: none;
+}
+
+.register .form-code {
+    display: block;
+    width: 100%;
+    margin: 0 0 20px 0;
+}
+
+.register .form-code #code {
+    display: inline-block;
+    width: 68%;
+    height: 46px;
+    padding: 0 13px;
+    border: 1px solid #fff;
+    border-radius: 2px 0 0 2px;
+    background-color: #f8f8f8;
+}
+
+.register .form-code #code:focus {
+    border: 1px solid #d1434a;
+    background-color: #f3f3f3;
+    outline: none;
+}
+
+.register .form-code #get-code {
+    display: inline-block;
+    width: 32%;
+    height: 46px;
+    border-radius: 0 2px 2px 0;
+    color: #fff;
+    text-align: center;
+    line-height: 46px;
+    vertical-align: top;
+    background-color: #d1434a;
+    cursor: pointer;
+}
+
+.register .form-btn {
+    display: block;
+    width: 68%;
+    margin: 0 auto 20px;
+    height: 46px;
+    border: 0 solid;
+    border-radius: 3px;
+    background-color: #d1434a;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.register #pread {
+    display: inline-block;
+}
+
+.register #eread {
+    display: inline-block;
+}
+
+.register label {
+    margin: 0 0 20px 5px;
+}
+
+.register label a {
+    color: #d1434a;
+}
+
+.register .jump {
+    text-align: center;
+}
+
+.register .jump a {
+    font-size: 1.2em;
+    color: #d1434a;
+    text-decoration: underline;
+}

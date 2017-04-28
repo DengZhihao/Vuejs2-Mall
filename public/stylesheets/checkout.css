@@ -888,6 +888,7 @@
 
 .checkout .btn {
     min-width: 220px;
+    margin: 1%;
 }
 
 .checkout-title {
@@ -1219,4 +1220,4 @@
     }
 }
 
-/** 商品详情 **/
+/** 我的信息 **/
